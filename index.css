@@ -1,0 +1,48 @@
+@font-face {
+  font-family: shinhan;
+  src: url("./static/fonts/webisfree.ttf");
+}
+
+body {
+  font-family: webisfree;
+}
+
+header {
+  padding: 20px 40px;
+}
+
+h1 {
+  font-family: "원신한 Bold";
+  font-size: 25px;
+  color: #011b6a;
+}
+
+section {
+  padding: 0 40px;
+}
+
+ul,
+li {
+  all: unset;
+}
+
+.category-listitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px #f0f0f0 solid;
+  cursor: pointer;
+}
+
+.category-listitem > p {
+  display: inline-block;
+}
+
+.category-listitem > img {
+  width: 15px;
+  padding-top: 5px;
+  display: inline-block;
+}
