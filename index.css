@@ -5,6 +5,9 @@
 
 body {
   font-family: webisfree;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -26,23 +29,70 @@ li {
   all: unset;
 }
 
-.category-listitem {
+.upperCon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+}
+
+.category-listitem {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
   box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   border: 1px #f0f0f0 solid;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.category-listitem > p {
+.category-listitem > div > p {
   display: inline-block;
 }
 
-.category-listitem > img {
+.category-listitem > div > img {
   width: 15px;
   padding-top: 5px;
   display: inline-block;
+}
+
+.questionItem {
+  padding: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+#modal-background {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-container {
+  width: 70%;
+  height: 90%;
+  background-color: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+#modal-title {
+  font-size: 18px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+#modal-content-text {
+  text-align: justify;
+}
+
+#modal-content-link {
 }
